@@ -1,6 +1,6 @@
 <?php  
 /**
- * Controller for the PINP app.
+ * Controller for the default app.
  *
  * @author        Damien Hodgkin <dracul01@gmail.com>
  * @copyright     Copyright (c) 2009
