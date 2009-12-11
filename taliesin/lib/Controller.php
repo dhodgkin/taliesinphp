@@ -16,28 +16,36 @@
  * @package       taliesin
  * @since         TaliesinPHP(tm) v 0.0.1
  * @version       0.0.1
- * @modifiedby    LastChangedBy: dhodgkin
- * @lastmodified  Date: 2009-12-08 12:56:01 -0500 (Tue, 8 Dec 2009)
+ * @modifiedby    dhodgkin
+ * @lastmodified  Fri Dec 11 07:44:59 2009
  */
 abstract class Controller {
     protected $Command;
     public function Controller(&$command) {
         $this->Command = $command;
     }
- 
-    abstract function _default(); 
-    abstract function _error();
+    /* the default actions need to be declared in the controller which inherits
+      from Controller.
+    */
+    abstract function index();  // default action for displaying the index.
+    abstract function _error(); // default action for displaying errors.
     
+    /**
+     * function execute()
+     *
+     * this is where the action to use is determined.
+     *
+     */ 
     public function execute() {
         $functionToCall = $this->Command->getFunction();
         if($this->Command->getFunction() == '') {
-            $functionToCall = 'default';
+            $functionToCall = DEFAULT_ACTION;
         }
  
-        if(!is_callable(array(&$this,'_'.$functionToCall))) {
-             $functionToCall = 'error';
+        if(!is_callable(array(&$this,$functionToCall))) {
+             $functionToCall = '_error';
         }
  
-        call_user_func(array(&$this,'_'.$functionToCall));
+        call_user_func(array(&$this,$functionToCall));
     }
 }

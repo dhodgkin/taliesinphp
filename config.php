@@ -16,8 +16,8 @@
  * @package       taliesin
  * @since         TaliesinPHP(tm) v 0.0.1
  * @version       0.0.1
- * @modifiedby    LastChangedBy: dhodgkin
- * @lastmodified  Date: 2009-12-08 12:56:01 -0500 (Tue, 8 Dec 2009)
+ * @modifiedby    dhodgkin
+ * @lastmodified  Fri Dec 11 07:47:37 2009
  */
 /*
     This config file is subject to change. TaliesinPHP(tm) is undergoing heavy
@@ -25,7 +25,7 @@
 */
 define('DEBUG', true);
 
-define('TALIESIN_LIB', dirname(__FILE__).'/lib');
+define('TALIESIN_LIB', dirname(__FILE__).'/taliesin/lib');
 define('TALIESIN_APP',  dirname(__FILE__).'/app');
 
 define('BASE_URL',  'http://'.dirname($_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME']));

@@ -17,8 +17,8 @@
  * @subpackage    taliesin.lib
  * @since         TaliesinPHP(tm) v 0.0.1
  * @version       0.0.1
- * @modifiedby    LastChangedBy: dhodgkin
- * @lastmodified  Date: 2009-12-08 12:56:01 -0500 (Tue, 8 Dec 2009)
+ * @modifiedby    dhodgkin
+ * @lastmodified  Fri Dec 11 07:48:37 2009
  */
 class Dispatcher {
     private $Command;
@@ -39,7 +39,7 @@ class Dispatcher {
         $this->dump($this->Command, false);
 
         if($this->Command->getCommandName() == false) {
-            $controllerName = 'default';
+            $controllerName = DEFAULT_CONTROLLER;
         } else {
             $controllerName = $this->Command->getCommandName();
         }
