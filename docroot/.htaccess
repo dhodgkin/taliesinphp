@@ -1,0 +1,26 @@
+##################### BEGIN htaccess for URL rewriting #########################
+ 
+#AddDefaultCharset utf-8
+
+#php_flag magic_quotes_gpc Off
+#php_flag short_open_tag Off
+ 
+# Apache rewrite for clean URLs:
+ 
+# http://www.domain.tld/<action>
+# Will translate to:
+# http://www.domain.tld/index.php?_url=<action>
+ 
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+#  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteCond %{REQUEST_FILENAME} !-l
+# Main URL rewriting.
+#  RewriteRule     /*\.(css|js|gif|png|jpe?g)$ - [L,NC]
+  RewriteRule ^(.*)$ index.php?action=$1 [L,QSA]
+
+</IfModule>
+
+##################### END htaccess for URL rewriting ###########################

@@ -1,0 +1,88 @@
+TaliesinPHP(tm) PHP Framework
+Copyright 2009
+By Damien Hodgkin <dracul01@gmail.com>
+
+Contents
+--------
+i. Abstract
+ii. Copyright Notices
+1. Introduction
+2. Setup
+3. Classes
+4. Tutorial
+5. Layout of TaliesinPHP(tm)
+
+i. Abstract
+-----------
+
+ii. Copyright Notices
+---------------------
+    TaliesinPHP(tm) PHP Framework
+        Damien Hodgkin <dracul01@gmail.com>
+        Copyright (c) 2009
+        http://www.opensource.org/licenses/bsd-license.php The BSD License
+
+    RedBean ORM
+        Gabor de Mooij (c) copyright 2009
+        http://www.opensource.org/licenses/bsd-license.php The BSD License
+
+    GeSHi - Generic Syntax Highlighter
+        Nigel McNie <nigel@geshi.org>, Benny Baumann <BenBE@omorphia.de>
+        (C) 2004 - 2007 Nigel McNie, (C) 2007 - 2008 Benny Baumann
+        http://gnu.org/copyleft/gpl.html GNU GPL
+
+1. Introduction
+---------------
+
+2. Setup
+--------
+
+3. Classes
+----------
+
+4. Tutorial
+-----------
+
+5. Layout of TaliesinPHP(tm)
+----------------------------
+
+    5.1 TaliesinPHP(tm) - Directory Structure
+    -----------------------------------------
+    
+    taliesin
+     |- extlib
+     |   |- geshi
+     |   |- RedBean
+     |- lib
+         |- DBAdapter.php
+         |- Base.php
+         |- Command.php
+         |- Controller.php
+         |- Dispatcher.php
+         |- UrlParser.php
+         |- View.php
+    
+    5.2 TaliesinPHP(tm) - Typical App Directory Structure
+    -----------------------------------------------------
+    
+    appname
+     |- app
+     |   |- controllers
+     |   |- layouts
+     |   |- models
+     |   |- views
+     |- docroot
+     |   |- assets
+     |   |   |- css
+     |   |   |- images
+     |   |   |- js
+     |   |- .htaccess
+     |   |- index.php
+     |- docs
+     |- taliesin
+     |   |- extlib
+     |   |- lib
+     |- sql
+     |- config.php
+     |- bootstrap.php
+
