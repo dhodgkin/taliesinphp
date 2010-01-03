@@ -1,6 +1,7 @@
 <?php
 /**
  * Command class for TaliesinPHP(tm).
+ * This class takes the commands parsed from the URL and returns them.
  *
  * PHP version 5
  *
@@ -11,7 +12,7 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @author        Damien Hodgkin <dracul01@gmail.com>
- * @copyright     Copyright (c) 2009
+ * @copyright     (C) 2009 Damien Hodgkin
  * @license       http://www.opensource.org/licenses/bsd-license.php The BSD License
  * @package       taliesin
  * @since         TaliesinPHP(tm) v 0.0.1
@@ -22,7 +23,7 @@
 class Command {
     protected $commandName = '';
     protected $parameters = array();
-             
+
     public function Command($commandName,$parameters) {
         $this->commandName = $commandName;
         $this->parameters = $parameters;
@@ -40,3 +41,4 @@ class Command {
         return $this->parameters;
     }
 }
+

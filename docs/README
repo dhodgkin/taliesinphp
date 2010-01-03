@@ -1,6 +1,6 @@
 TaliesinPHP(tm) PHP Framework
-Copyright 2009
-By Damien Hodgkin <dracul01@gmail.com>
+Damien Hodgkin <dracul01@gmail.com>
+(C) 2009 Damien Hodgkin
 
 Contents
 --------
@@ -19,7 +19,7 @@ ii. Copyright Notices
 ---------------------
     TaliesinPHP(tm) PHP Framework
         Damien Hodgkin <dracul01@gmail.com>
-        Copyright (c) 2009
+        (C) 2009 Damien Hodgkin
         http://www.opensource.org/licenses/bsd-license.php The BSD License
 
     RedBean ORM
@@ -48,7 +48,7 @@ ii. Copyright Notices
 
     5.1 TaliesinPHP(tm) - Directory Structure
     -----------------------------------------
-    
+
     taliesin
      |- extlib
      |   |- geshi
@@ -61,10 +61,10 @@ ii. Copyright Notices
          |- Dispatcher.php
          |- UrlParser.php
          |- View.php
-    
+
     5.2 TaliesinPHP(tm) - Typical App Directory Structure
     -----------------------------------------------------
-    
+
     appname
      |- app
      |   |- controllers

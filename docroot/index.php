@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * index file for TaliesinPHP(tm).
  *
@@ -23,11 +23,30 @@
 include '../config.php';
 
 // Get Everything running.
-include(TALIESIN_LIB.'/Command.php');
-include(TALIESIN_LIB.'/UrlParser.php');
-include(TALIESIN_LIB.'/Dispatcher.php');
+//include(TALIESIN_LIB.'/Command.php');
+//include(TALIESIN_LIB.'/UrlParser.php');
+//include(TALIESIN_LIB.'/Dispatcher.php');
+//include(TALIESIN_EXTLIB.'/urlShort/shorturl.php');
 
-$urlParser = new UrlParser();
-$command = $urlParser->getCommand();
-$commandDispatcher = new Dispatcher($command);
-$commandDispatcher->dispatch();
+//$urlParser = new UrlParser();
+//$command = $urlParser->getCommand();
+//$commandDispatcher = new Dispatcher($command);
+//$commandDispatcher->dispatch();
+
+//$shturl = new ShortUrl("urlDB");
+//$shorty = $shturl->createShorty("http://www.google.com");
+//$shortUrl = "http://".$_SERVER["HTTP_HOST"]."/.$shorty";
+//echo $shortUrl;
+
+echo "path settings: <br />";
+echo "APP: " . APP . "\n<br />";
+
+echo "TALIESIN: " . TALIESIN . "\n<br />";
+echo "TALIESIN_LIB: " . TALIESIN_LIB . "\n<br />";
+echo "TALIESIN_EXTLIB: " . TALIESIN_EXTLIB . "\n<br />";
+echo "TALIESIN_APP: " . TALIESIN_APP . "\n<br />";
+echo "TALIESIN_VIEWS: " . TALIESIN_VIEWS . "\n<br />";
+
+
+echo "BASE_URL: " . BASE_URL . "\n<br />";
+

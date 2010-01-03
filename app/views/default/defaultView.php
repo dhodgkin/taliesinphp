@@ -5,4 +5,5 @@
  * @author        Damien Hodgkin <dracul01@gmail.com>
  * @copyright     Copyright (c) 2009
  */
-require('index.phtml');
+require($TALIESIN_VIEWS.'templates/index.phtml');
+

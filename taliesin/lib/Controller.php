@@ -11,7 +11,7 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @author        Damien Hodgkin <dracul01@gmail.com>
- * @copyright     Copyright (c) 2009
+ * @copyright     (C) 2009 Damien Hodgkin
  * @license       http://www.opensource.org/licenses/bsd-license.php The BSD License
  * @package       taliesin
  * @since         TaliesinPHP(tm) v 0.0.1
@@ -29,23 +29,24 @@ abstract class Controller {
     */
     abstract function index();  // default action for displaying the index.
     abstract function _error(); // default action for displaying errors.
-    
+
     /**
      * function execute()
      *
      * this is where the action to use is determined.
      *
-     */ 
+     */
     public function execute() {
         $functionToCall = $this->Command->getFunction();
         if($this->Command->getFunction() == '') {
             $functionToCall = DEFAULT_ACTION;
         }
- 
+
         if(!is_callable(array(&$this,$functionToCall))) {
              $functionToCall = '_error';
         }
- 
+
         call_user_func(array(&$this,$functionToCall));
     }
 }
+

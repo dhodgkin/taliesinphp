@@ -1,6 +1,10 @@
-<?php 
+<?php
 /**
  * config file for TaliesinPHP(tm).
+ *  This config file is subject to change. TaliesinPHP(tm) is undergoing heavy
+ *  construction.
+ *
+ *  NOTE: #1 Find the best way to define the constants, not sure if using define() is the way to go.
  *
  * PHP version 5
  *
@@ -19,16 +23,36 @@
  * @modifiedby    dhodgkin
  * @lastmodified  Fri Dec 11 07:47:37 2009
  */
+
 /*
-    This config file is subject to change. TaliesinPHP(tm) is undergoing heavy
-    construction.
+    User serviceable constants.
 */
+// set debugging
 define('DEBUG', true);
 
-define('TALIESIN_LIB', dirname(__FILE__).'/taliesin/lib');
-define('TALIESIN_APP',  dirname(__FILE__).'/app');
+// set paths
+define('APP', dirname(__FILE__));
+define('TALIESIN', APP.'/taliesin');
+define('TALIESIN_LIB', TALIESIN.'/lib');
+define('TALIESIN_EXTLIB', TALIESIN.'/extlib');
+define('TALIESIN_APP',  APP.'/app');
+define('TALIESIN_VIEWS', TALIESIN_APP.'/views');
 
+// set default controller and actions
+define('DEFAULT_CONTROLLER', 'index');
+define('DEFAULT_INDEX_ACTION', 'index');
+define('DEAFULT_ERROR_ACTION', 'error');
+
+// set timezone and date format, these are in php's date() format codes.
+define('DATE_TZ', 'T');
+define('DATE_FORMAT', 'D M j h:i:s Y');
+
+/*
+    The constants below should not need to be touched, except in extreme cases
+    where the default structure of things has been changed.
+
+    TaliesinPHP hackers should become familiar with these constants. They are
+    part of the library. Although, they probably should be defined else where.
+*/
 define('BASE_URL',  'http://'.dirname($_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME']));
 
-define('DEFAULT_CONTROLLER', 'index');
-define('DEFAULT_ACTION', 'index');

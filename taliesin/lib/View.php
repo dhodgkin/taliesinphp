@@ -11,7 +11,7 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @author        Damien Hodgkin <dracul01@gmail.com>
- * @copyright     Copyright (c) 2009
+ * @copyright     (C) 2009 Damien Hodgkin
  * @license       http://www.opensource.org/licenses/bsd-license.php The BSD License
  * @package       taliesin
  * @since         TaliesinPHP(tm) v 0.0.1
@@ -26,7 +26,7 @@ class View {
     public function __construct($view) {
         $viewsDirectory = TALIESIN_APP . '/views';
         $this->view = $viewsDirectory . '/' . $view . '/' . $view . 'View.php';
-    }   
+    }
 
     public function set($var, $val) {
         $this->pageVars[$var] = $val;
@@ -39,3 +39,4 @@ class View {
         return ob_get_clean();
     }
 }
+

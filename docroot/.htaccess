@@ -15,12 +15,12 @@
   RewriteEngine On
 #  RewriteBase /
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteCond %{REQUEST_FILENAME} !-d
 #  RewriteCond %{REQUEST_FILENAME} !-l
 # Main URL rewriting.
 #  RewriteRule     /*\.(css|js|gif|png|jpe?g)$ - [L,NC]
-  RewriteRule ^(.*)$ index.php?action=$1 [L,QSA]
-
+#  RewriteRule     ^(.*)$ index.php?action=$1 [L,QSA]
+  RewriteRule     . resolve.php [L]
 </IfModule>
 
 ##################### END htaccess for URL rewriting ###########################

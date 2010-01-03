@@ -1,17 +1,17 @@
-<?php 
+<?php
 /**
  * Dispatcher is the main class of TaliesinPHP(tm).
  *
  * PHP version 5
  *
  * TaliesinPHP(tm) PHP Framework
- * Copyright 2009 
+ * Copyright 2009
  *
  * Licensed under The BSD License
  * Redistributions of files must retain the above copyright notice.
  *
  * @author        Damien Hodgkin <dracul01@gmail.com>
- * @copyright     Copyright (c) 2009
+ * @copyright     (C) 2009 Damien Hodgkin
  * @license       http://www.opensource.org/licenses/bsd-license.php The BSD License
  * @package       taliesin
  * @subpackage    taliesin.lib
@@ -22,11 +22,11 @@
  */
 class Dispatcher {
     private $Command;
-       
+
     public function Dispatcher(&$command) {
         $this->Command = $command;
     }
-       
+
     private function isController($controllerName) {
         if(file_exists(TALIESIN_APP . '/controllers' . '/' . $controllerName . 'Controller.php')) {
             return true;
@@ -34,7 +34,7 @@ class Dispatcher {
             return false;
         }
     }
-       
+
     public function dispatch() {
         $this->dump($this->Command, false);
 
@@ -62,5 +62,6 @@ class Dispatcher {
         } else {
             echo $printString;
         }
-    }   
+    }
 }
+
