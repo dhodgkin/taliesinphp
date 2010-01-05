@@ -24,8 +24,10 @@ abstract class Controller {
     public function Controller(&$command) {
         $this->Command = $command;
     }
-    /* the default actions need to be declared in the controller which inherits
-      from Controller.
+
+    /*
+        The default actions need to be declared in the controller which inherits
+        from Controller.
     */
     abstract function index();  // default action for displaying the index.
     abstract function _error(); // default action for displaying errors.
@@ -34,7 +36,6 @@ abstract class Controller {
      * function execute()
      *
      * this is where the action to use is determined.
-     *
      */
     public function execute() {
         $functionToCall = $this->Command->getFunction();

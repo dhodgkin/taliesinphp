@@ -20,7 +20,7 @@
  * @modifiedby    dhodgkin
  * @lastmodified  Fri Dec 11 07:48:21 2009
  */
-include '../config.php';
+include '../app/config/config.php';
 
 // Get Everything running.
 //include(TALIESIN_LIB.'/Command.php');
@@ -38,15 +38,5 @@ include '../config.php';
 //$shortUrl = "http://".$_SERVER["HTTP_HOST"]."/.$shorty";
 //echo $shortUrl;
 
-echo "path settings: <br />";
-echo "APP: " . APP . "\n<br />";
-
-echo "TALIESIN: " . TALIESIN . "\n<br />";
-echo "TALIESIN_LIB: " . TALIESIN_LIB . "\n<br />";
-echo "TALIESIN_EXTLIB: " . TALIESIN_EXTLIB . "\n<br />";
-echo "TALIESIN_APP: " . TALIESIN_APP . "\n<br />";
-echo "TALIESIN_VIEWS: " . TALIESIN_VIEWS . "\n<br />";
-
-
-echo "BASE_URL: " . BASE_URL . "\n<br />";
+phpinfo();
 
