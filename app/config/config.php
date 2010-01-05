@@ -31,17 +31,18 @@
 define('DEBUG', true);
 
 // set paths
-define('APP', dirname(__FILE__));
+define('APP', '/home/damo/www/taliesinphp');
 define('TALIESIN', APP.'/taliesin');
 define('TALIESIN_LIB', TALIESIN.'/lib');
 define('TALIESIN_EXTLIB', TALIESIN.'/extlib');
 define('TALIESIN_APP',  APP.'/app');
+define('TALIESIN_CONFIG', TALIESIN_APP.'/config');
 define('TALIESIN_VIEWS', TALIESIN_APP.'/views');
 
 // set default controller and actions
 define('DEFAULT_CONTROLLER', 'index');
 define('DEFAULT_INDEX_ACTION', 'index');
-define('DEAFULT_ERROR_ACTION', 'error');
+define('DEFAULT_ERROR_ACTION', 'error');
 
 // set timezone and date format, these are in php's date() format codes.
 define('DATE_TZ', 'T');
