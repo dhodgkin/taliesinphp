@@ -22,21 +22,6 @@
  */
 include '../app/config/config.php';
 
-// Get Everything running.
-//include(TALIESIN_LIB.'/Command.php');
-//include(TALIESIN_LIB.'/UrlParser.php');
-//include(TALIESIN_LIB.'/Dispatcher.php');
-//include(TALIESIN_EXTLIB.'/urlShort/shorturl.php');
-
-//$urlParser = new UrlParser();
-//$command = $urlParser->getCommand();
-//$commandDispatcher = new Dispatcher($command);
-//$commandDispatcher->dispatch();
-
-//$shturl = new ShortUrl("urlDB");
-//$shorty = $shturl->createShorty("http://www.google.com");
-//$shortUrl = "http://".$_SERVER["HTTP_HOST"]."/.$shorty";
-//echo $shortUrl;
-
-phpinfo();
+// TODO: add a bootstrap.php, this will take care of autoloading and other setup
+//       setup tasks.
 
