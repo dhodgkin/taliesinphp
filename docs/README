@@ -10,7 +10,7 @@ ii. Copyright Notices
 2. Setup
 3. Classes
 4. Tutorial
-5. Layout of TaliesinPHP(tm)
+5. Directory Layout
 
 i. Abstract
 -----------
@@ -43,46 +43,44 @@ ii. Copyright Notices
 4. Tutorial
 -----------
 
-5. Layout of TaliesinPHP(tm)
-----------------------------
+5. Directory Layout
+-------------------
 
-    5.1 TaliesinPHP(tm) - Directory Structure
-    -----------------------------------------
-
-    taliesin
-     |- extlib
-     |   |- geshi
-     |   |- RedBean
-     |- lib
-         |- DBAdapter.php
-         |- Base.php
-         |- Command.php
-         |- Controller.php
-         |- Dispatcher.php
-         |- UrlParser.php
-         |- View.php
-
-    5.2 TaliesinPHP(tm) - Typical App Directory Structure
+    5.1 TaliesinPHP(tm) - Typical App Directory Structure
     -----------------------------------------------------
+    note: I used the "Conventional Modular" directory layout that Zend prefers.
+          This is a clean layout, and works really well with the MVC pattern.
 
-    appname
-     |- app
-     |   |- controllers
-     |   |- layouts
-     |   |- models
-     |   |- views
-     |- docroot
-     |   |- assets
-     |   |   |- css
-     |   |   |- images
-     |   |   |- js
-     |   |- .htaccess
-     |   |- index.php
-     |- docs
-     |- taliesin
-     |   |- extlib
-     |   |- lib
-     |- sql
-     |- config.php
-     |- bootstrap.php
+    /appname
+        /app
+            /config (global, optional)
+            /(module 1)
+                /config (module specific, optional as needed)
+                /controllers
+                /models
+                /views
+            /(module 2)
+                /controllers
+                /models
+                /views
+            /(module n)
+                /controllers
+                /models
+                /views
+        /docroot
+            /assets
+                /images
+                /js
+                /css
+            index.php
+        /lib
+            /taliesin
+            /extlib
+                /(3rd party libs)
+        /var
+            /tmp
+                /sessions
+                /cache
+            /logs
+            /cron
 
