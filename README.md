@@ -1,19 +1,10 @@
-# Tatzoo
+# TaliesinPHP
 
 ## More Information
 
-## Required Gems
-
-This application requires this gem:
-
-Please read the Gemfile to see the list of needed gems.
+## Required libs
 
 ## Dependencies
-
-To use this application, you will need:
-
-* The Ruby language (version 1.9.2)
-* Rails (version 3.1.2 or newer)
 
 ## Installing the Application
 
