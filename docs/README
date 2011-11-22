@@ -1,0 +1,86 @@
+TaliesinPHP(tm) PHP Framework
+Damien Hodgkin <dracul01@gmail.com>
+(C) 2009 Damien Hodgkin
+
+Contents
+--------
+i. Abstract
+ii. Copyright Notices
+1. Introduction
+2. Setup
+3. Classes
+4. Tutorial
+5. Directory Layout
+
+i. Abstract
+-----------
+
+ii. Copyright Notices
+---------------------
+    TaliesinPHP(tm) PHP Framework
+        Damien Hodgkin <dracul01@gmail.com>
+        (C) 2009 Damien Hodgkin
+        http://www.opensource.org/licenses/bsd-license.php The BSD License
+
+    RedBean ORM
+        Gabor de Mooij (c) copyright 2009
+        http://www.opensource.org/licenses/bsd-license.php The BSD License
+
+    GeSHi - Generic Syntax Highlighter
+        Nigel McNie <nigel@geshi.org>, Benny Baumann <BenBE@omorphia.de>
+        (C) 2004 - 2007 Nigel McNie, (C) 2007 - 2008 Benny Baumann
+        http://gnu.org/copyleft/gpl.html GNU GPL
+
+1. Introduction
+---------------
+
+2. Setup
+--------
+
+3. Classes
+----------
+
+4. Tutorial
+-----------
+
+5. Directory Layout
+-------------------
+
+    5.1 TaliesinPHP(tm) - Typical App Directory Structure
+    -----------------------------------------------------
+    note: I used the "Conventional Modular" directory layout that Zend prefers.
+          This is a clean layout, and works really well with the MVC pattern.
+
+    /appname
+        /app
+            /config (global, optional)
+            /(module 1)
+                /config (module specific, optional as needed)
+                /controllers
+                /models
+                /views
+            /(module 2)
+                /controllers
+                /models
+                /views
+            /(module n)
+                /controllers
+                /models
+                /views
+        /docroot
+            /assets
+                /images
+                /js
+                /css
+            index.php
+        /lib
+            /taliesin
+            /extlib
+                /(3rd party libs)
+        /var
+            /tmp
+                /sessions
+                /cache
+            /logs
+            /cron
+
