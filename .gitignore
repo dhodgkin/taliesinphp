@@ -12,3 +12,4 @@ tmp/*
 /nbproject/
 /*.tmproj
 **.swp
+.redcar/
